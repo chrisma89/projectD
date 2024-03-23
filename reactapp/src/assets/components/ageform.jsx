@@ -12,7 +12,10 @@ const Age = () => {
     <>
     <h2>Please input your child's Date of birth</h2>
     <div>
-    <DatePicker  dateFormat="dd/MM/yyyy" selected={date} onChange={(date) => setDate(date)} />
+    <DatePicker  dateFormat="dd/MM/yyyy"    peekNextMonth
+      showMonthDropdown
+      showYearDropdown
+      dropdownMode="select" showIcon selected={date} onChange={(date) => setDate(date)} />
     </div>
     </>
     );
