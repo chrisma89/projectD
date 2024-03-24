@@ -10,8 +10,18 @@ const Age = () => {
   const [info, setInfo] = useState(false)
   const displayinfo =()=>{
     setInfo(true)
-    // <CustomInfo />
   }
+  
+ 
+  
+  if(info){
+    return(
+      
+      <CustomInfo />
+      
+    )
+  }
+
 
   return (
     <>
@@ -25,7 +35,7 @@ const Age = () => {
     <div>
       <button onClick={displayinfo}>Get Dental Information</button>
     </div>
-    {info && <CustomInfo/>}
+   
     </>
     );
 }
