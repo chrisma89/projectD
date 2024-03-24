@@ -1,6 +1,6 @@
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-  import React, { useState } from "react";
+  import React, { useEffect, useState } from "react";
   import CustomInfo from "./custominfo";
 
 
@@ -8,6 +8,12 @@ const Age = () => {
 
   const [date, setDate] = useState(null);
   const [info, setInfo] = useState(false)
+
+  useEffect(()=>{
+    localStorage.setItem("storedDate", JSON.stringify(date));
+
+    console.log("storedDate")
+  }, [date])
   const displayinfo =()=>{
     setInfo(true)
   }
@@ -16,12 +22,22 @@ const Age = () => {
   
   if(info){
     return(
-      
       <CustomInfo />
-      
-    )
+      )
   }
 
+  const storeDate =() =>{
+ 
+  
+
+
+   let retrievedDate = localStorage.getItem("storedDate");
+   let currentAge = Date() - retrievedDate;
+   console.log("retrievedDate" , retrievedDate);
+   console.log("date", Date())
+   console.log(currentAge)
+  
+}
 
   return (
     <>
@@ -32,8 +48,12 @@ const Age = () => {
       showYearDropdown
      
      
-      dropdownMode="select" showIcon selected={date} onChange={(date) => setDate(date)} />
+      dropdownMode="select" showIcon selected={date} onChange={(date) => { setDate(date) ;storeDate(date)}}
+       />
     </div>
+    {/* <div>
+      Your child's age is : 
+    </div> */}
     <div>
       <button onClick={displayinfo}>Get Dental Information</button>
     </div>
