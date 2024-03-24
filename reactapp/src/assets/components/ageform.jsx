@@ -6,7 +6,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 const Age = () => {
 
-  const [date, setDate] = useState(new Date());
+  const [date, setDate] = useState(null);
   const [info, setInfo] = useState(false)
   const displayinfo =()=>{
     setInfo(true)
@@ -27,9 +27,11 @@ const Age = () => {
     <>
     <h2>Please input your child's Date of birth</h2>
     <div>
-    <DatePicker  dateFormat="dd/MM/yyyy"    peekNextMonth
+    <DatePicker placeholderText="Click to select a date" dateFormat="dd/MM/yyyy"   
       showMonthDropdown
       showYearDropdown
+     
+     
       dropdownMode="select" showIcon selected={date} onChange={(date) => setDate(date)} />
     </div>
     <div>
