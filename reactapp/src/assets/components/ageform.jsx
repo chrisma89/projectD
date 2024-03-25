@@ -10,9 +10,10 @@ const Age = () => {
   const [info, setInfo] = useState(false)
 
   useEffect(()=>{
-    localStorage.setItem("storedDate", JSON.stringify(date));
+    let onlyDate = date?.toISOString().split('T')[0];
+    localStorage.setItem("storedDate", JSON.stringify(onlyDate));
 
-    console.log("storedDate")
+    console.log(onlyDate)
   }, [date])
   const displayinfo =()=>{
     setInfo(true)
@@ -30,12 +31,19 @@ const Age = () => {
  
   
 
+   
+   let retrievedDate = JSON.parse(localStorage.getItem("storedDate"))
 
-   let retrievedDate = localStorage.getItem("storedDate");
-   let currentAge = Date() - retrievedDate;
-   console.log("retrievedDate" , retrievedDate);
-   console.log("date", Date())
-   console.log(currentAge)
+   if(!retrievedDate  ){
+    
+         console.log("Date is invalid");
+         return
+ 
+   }
+   else{
+    console.log(retrievedDate)
+   }
+
   
 }
 
@@ -48,14 +56,14 @@ const Age = () => {
       showYearDropdown
      
      
-      dropdownMode="select" showIcon selected={date} onChange={(date) => { setDate(date) ;storeDate(date)}}
+      dropdownMode="select" showIcon selected={date} onChange={(date) => { setDate(date)}}
        />
     </div>
     {/* <div>
       Your child's age is : 
     </div> */}
     <div>
-      <button onClick={displayinfo}>Get Dental Information</button>
+      <button onClick={()=> {{displayinfo}; storeDate(date)}}>Get Dental Information</button>
     </div>
    
     </>
