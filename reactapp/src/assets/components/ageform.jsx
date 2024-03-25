@@ -65,8 +65,10 @@ const Age = () => {
           onClick={() => {
             {
               displayinfo;
-            }
+              setInfo(true)
+            
             storeDate(date);
+            }
           }}
         >
           Get Dental Information
