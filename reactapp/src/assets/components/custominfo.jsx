@@ -31,10 +31,20 @@ const CustomInfo = () => {
     age--;
   }
 
+  if(age <= 1){
+   age =   thisMonth - birthMonth ;
+  return (
+    <div>
+      Your child is {age} months old
+    </div>
+  )
+  }
+
   return (
     <>
       <h2> Welcome</h2>
       <div>Your child is {age} years old</div>
+      {/* <div>Your child is  {months} months old</div> */}
     </>
   );
 };
