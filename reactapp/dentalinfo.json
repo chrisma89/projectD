@@ -29,10 +29,21 @@
 {
   "id" : "4",
   "agegroup" : "3-6years",
-  "toothbrush" : "use a small, medium toothbrush. Place the head (bristles) of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Brushing back and forth can hurt the gums and teeth. Do all sides of the teeth.",
+  "toothbrush" : "Parental supervision and help with brushing is necessary to help get all teeth clean. use a small toothbrush head, medium texture. Place the head (bristles) of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Brushing back and forth can hurt the gums and teeth. Do all sides of the teeth.",
   "toothpaste" : "Toothpaste containing 1,350 to 1,500 ppm fluoride, using only a pea-sized amount of toothpaste",
   "frequency" : "last thing before bedtime and on one other occasion",
-    "dentalvisit" : "As soon as the first tooth erupts and follow your dentist's recommendation for further viists",
+    "dentalvisit" : "Every 6 months unless specified differently by your dentist",
     "food" : "Avoid adding sugar to foods and drinks, minimize consumption of sugary items, and especially avoid them before bedtime as saliva flow is reduces at night."
 },
+{
+  "id" : "5",
+  "agegroup" : "7-18years",
+  "toothbrush" : "Use a small toothbrush head, medium texture. Place the head (bristles) of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Brushing back and forth can hurt the gums and teeth. Do all sides of the teeth.",
+  "interdental" : "Clean daily between the teeth to below the gum line before toothbrushing. Where there is space for an interdental or single-tufted brush, this should be used.
+  For small spaces between teeth, use dental floss or tape.",
+  "toothpaste" : "Toothpaste containing 1,350 to 1,500 ppm fluoride, using only a pea-sized amount of toothpaste",
+  "frequency" : "last thing before bedtime and on one other occasion",
+    "dentalvisit" : "Every 6 months unless specified differently by your dentist",
+    "food" : "Avoid adding sugar to foods and drinks, minimize consumption of sugary items, and especially avoid them before bedtime as saliva flow is reduces at night."
+}
 ]
