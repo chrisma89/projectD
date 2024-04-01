@@ -1,3 +1,7 @@
+import React from "react";
+import dentalinfo from "../../dentalinfo.json"
+
+
 const CustomInfo = () => {
   let savedBirthdate = JSON.parse(localStorage.getItem("storedDate"));
   console.log(savedBirthdate);
@@ -53,7 +57,7 @@ const CustomInfo = () => {
     <>
       <h2> Welcome</h2>
       <div>Your child is {age} years old</div>
-      {/* <div>Your child is  {months} months old</div> */}
+      
     </>
   );
 };
