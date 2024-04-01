@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const ToothInfo = ({childage}) => {
   console.log({childage})
-
+  if (childage)
   return ( 
     <>
     <div>AGEEEEEEEEEEEEEe</div>

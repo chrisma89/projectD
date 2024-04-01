@@ -32,6 +32,10 @@ const CustomInfo = () => {
   // usestate hook
   const [childage, setChildAge] = useState("")
 
+  useEffect (()=>{
+    setChildAge(age)
+  },[age])
+
   // validating age calculation
   if (
     birthMonth > thisMonth ||
