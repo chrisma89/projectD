@@ -33,12 +33,21 @@ const CustomInfo = () => {
 
   if(age <= 1){
    age =   thisMonth - birthMonth ;
+   if(age > 1){
   return (
     <div>
       Your child is {age} months old
     </div>
-  )
+  )}
+  else {
+    return (
+      <div>
+        Your child is {age} month old
+      </div>
+    )
   }
+  }
+  
 
   return (
     <>
