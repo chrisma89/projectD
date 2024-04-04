@@ -121,17 +121,8 @@ const [childage, setChildAge] = useState("")
 
   // calculate age
   let age = thisYear - birthYear;
-setChildAge(age)
-  // useEffect (()=>{
-  //       setChildAge(age)
-  //     },[age])
+// setChildAge(age)
 
-  // usestate hook
-  
-
- 
-
-  // validating age calculation
   if (
     birthMonth > thisMonth ||
     (birthMonth === thisMonth && birthDay > thisDay)
@@ -143,27 +134,12 @@ setChildAge(age)
     setageUnit("months")
    age =   thisMonth - birthMonth ;
   }
+  setChildAge(age)
+  // localStorage.setItem("age", {childage}{ageUnit})
   },[])
-
-
-   
-  //  if(age > 1){
-    
-  // return (
-  //   <div>
-  //     Your child is {age} months old
-  //     <ToothInfo childage={childage} birthday={birthday} />
-  //   </div>
-  // )}
-  // else {
-  //   return (
-  //     <div>
-  //       Your child is {age} month old
-  //       <ToothInfo  childage={childage} birthday={birthday} />
-  //     </div>
-  //   )
-  // }
-  // }
+localStorage.setItem("agedata", `${childage} ${ageUnit}`)
+  // localStorage.setItem("agedata", {childage}{ageUnit})
+  
   
   
 

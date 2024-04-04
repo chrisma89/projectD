@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const ToothInfo = ({childage, birthday}) => {
   console.log(childage, birthday)
+  
   // if (childage)
   return ( 
     <>
