@@ -3,9 +3,9 @@ import CustomInfo from "./custominfo";
 import React from "react";
 import { useState } from "react";
 
-const ToothInfo = ({childage}) => {
-  console.log({childage})
-  if (childage)
+const ToothInfo = ({childage, birthday}) => {
+  console.log(childage, birthday)
+  // if (childage)
   return ( 
     <>
     <div>AGEEEEEEEEEEEEEe</div>
