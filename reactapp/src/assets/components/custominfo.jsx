@@ -91,8 +91,8 @@ import ToothInfo from "./tooth";
 
 const CustomInfo = () => {
 
-const [childage, setChildAge] = useState("")
-  const [ageUnit, setageUnit] = useState("years")
+const [childAge, setChildAge] = useState("")
+  const [ageUnit, setAgeUnit] = useState("years")
 
   useEffect(()=>{
       let savedBirthdate = JSON.parse(localStorage.getItem("storedDate"));
@@ -103,51 +103,49 @@ const [childage, setChildAge] = useState("")
   } else {
     console.log("birthday", savedBirthdate);
   }
-//  useEffect (()=>{
-//     setChildAge(age)
-//   },[age])
   let savedBirthDay = new Date(savedBirthdate);
   let todayDate = new Date();
 
   // splitting today to compare with birth
-  let thisYear = todayDate.getFullYear();
-  let thisMonth = todayDate.getMonth();
-  let thisDay = todayDate.getDate();
+  let ageYears = todayDate.getFullYear() - savedBirthDay.getFullYear();
+  let ageMonths = todayDate.getMonth() - savedBirthDay.getMonth();
+  let ageDays = todayDate.getDate() - savedBirthDay.getDate();
 
-  // splitting birthdate to compare
-  let birthYear = savedBirthDay.getFullYear();
-  let birthMonth = savedBirthDay.getMonth();
-  let birthDay = savedBirthDay.getDate();
 
-  // calculate age
-  let age = thisYear - birthYear;
-// setChildAge(age)
 
-  if (
-    birthMonth > thisMonth ||
-    (birthMonth === thisMonth && birthDay > thisDay)
-  ) {
-    age--;
+  if (ageMonths < 0 || (ageMonths === 0 && ageDays < 0)) {
+    ageYears--;
+    ageMonths += 12; 
   }
 
-  if(age <= 1){
-    setageUnit("months")
-   age =   thisMonth - birthMonth ;
+  // If less than a year old, show age in months
+  if (ageYears === 0 || (ageYears === 1 && ageMonths < 12)) {
+    if (ageDays < 0) {
+      ageMonths--; 
+    }
+    setChildAge(ageMonths);
+    setAgeUnit("months");
+  } else {
+    setChildAge(ageYears);
+    setAgeUnit("years");
   }
-  setChildAge(age)
+  // localStorage.setItem("agedata", `${childAge} ${ageUnit}`)
   // localStorage.setItem("age", {childage}{ageUnit})
   },[])
-localStorage.setItem("agedata", `${childage} ${ageUnit}`)
+
   // localStorage.setItem("agedata", {childage}{ageUnit})
-  
+  // useEffect(() => {
+  //   // Ensures childAge and ageUnit are set before updating localStorage
+  //   localStorage.setItem("agedata", `${childAge} ${ageUnit}`);
+  // }, [childAge, ageUnit]);
   
   
 
   return (
     <>
       <h2> Welcome</h2>
-      <div>Your child is {childage} {ageUnit} old</div>
-      <ToothInfo />
+      <div>Your child is {childAge} {ageUnit} old</div>
+      <ToothInfo childAge= {childAge} ageUnit ={ageUnit} />
       
     </>
   );
