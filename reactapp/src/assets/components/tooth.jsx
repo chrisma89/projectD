@@ -10,20 +10,24 @@ let ageData = `${childAge} ${ageUnit}`
 
 
 
+let matchedInfo = dentalinfo.find(info => `${childAge}`=== info.childage)
+
+
+
+
   // if (childage)
   return ( 
     <>
     <div>AGEEEEEEEEEEEEEe</div>
     {/* <div>{ageData}</div> */}
     <div>{ageData}</div>
-    {/* <div>{childAge} {ageUnit}</div> */}
-    <div>
-       {dentalinfo.map((agegroup)=> {
-       <div>
-        {agegroup.toothbrush}
-       </div> 
-    })}
-    </div>
+    {matchedInfo ? (
+    <div>{matchedInfo}</div>
+    )
+  :
+  (
+    <div>NO matches found</div>
+  )}
    
     </>
    );
