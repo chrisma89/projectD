@@ -122,25 +122,32 @@ const [childAge, setChildAge] = useState("")
   if (ageYears === 0 || (ageYears === 1 && ageMonths < 12)) {
     if (ageDays < 0) {
       ageMonths--; 
+      if(ageMonths <= 6){
+        localStorage.setItem("agedata", 0)
+      }
+      else{
+        localStorage.setItem("agedata", 1)
+      }
     }
     setChildAge(ageMonths);
     setAgeUnit("months");
+    
   } else {
+    
     setChildAge(ageYears);
     setAgeUnit("years");
+    if (ageYears >= 1 && ageYears <=3 ){
+      localStorage.setItem("agedata", 2)
+    }
+    else if(ageYears > 3 && ageYears <=6){
+      localStorage.setItem("agedata", 3)
+    }
+    else if(ageYears >= 7){
+      localStorage.setItem("agedata", 4)
+    }
   }
-  // localStorage.setItem("agedata", `${childAge} ${ageUnit}`)
-  // localStorage.setItem("age", {childage}{ageUnit})
   },[])
-
-  // localStorage.setItem("agedata", {childage}{ageUnit})
-  // useEffect(() => {
-  //   // Ensures childAge and ageUnit are set before updating localStorage
-  //   localStorage.setItem("agedata", `${childAge} ${ageUnit}`);
-  // }, [childAge, ageUnit]);
   
-  
-
   return (
     <>
       <h2> Welcome</h2>
