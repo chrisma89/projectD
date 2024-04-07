@@ -19,19 +19,23 @@ let matchedInfo = dentalinfo.find(info => agedata === info.id)
 
   // if (childage)
   return ( 
-    <>
-    <div>AGEEEEEEEEEEEEEe</div>
-    {/* <div>{ageData}</div> */}
-    <div>{ageData}</div>
+    <div>  
+      {/* <div>{ageData}</div> */}
     {matchedInfo ? (
-    <div>{matchedInfo.toothbrush}</div>
-    )
+      <>  
+      <div>{matchedInfo.toothbrush}</div>
+    <div>{matchedInfo.frequency}</div>
+    <div>{matchedInfo.toothpaste}</div>
+    <div>{matchedInfo.dentalvisit}</div>
+    <div>{matchedInfo.food}</div>
+      </>
+  )
   :
   (
-    <div>NO matches found</div>
+    <div>No matches found</div>
   )}
    
-    </>
+    </div>
    );
 }
  
