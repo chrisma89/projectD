@@ -122,15 +122,16 @@ const [childAge, setChildAge] = useState("")
   if (ageYears === 0 || (ageYears === 1 && ageMonths < 12)) {
     if (ageDays < 0) {
       ageMonths--; 
-      if(ageMonths <= 6){
+      
+    }
+    setChildAge(ageMonths);
+    setAgeUnit("months");
+    if(ageMonths <= 6){
         localStorage.setItem("agedata", 0)
       }
       else{
         localStorage.setItem("agedata", 1)
       }
-    }
-    setChildAge(ageMonths);
-    setAgeUnit("months");
     
   } else {
     

@@ -24,7 +24,7 @@ let matchedInfo = dentalinfo.find(info => agedata === info.id)
     {/* <div>{ageData}</div> */}
     <div>{ageData}</div>
     {matchedInfo ? (
-    <div>{matchedInfo}</div>
+    <div>{matchedInfo.toothbrush}</div>
     )
   :
   (
