@@ -7,10 +7,12 @@ const ToothInfo = ({childAge, ageUnit}) => {
 
   
 let ageData = `${childAge} ${ageUnit}`
+let agedata = localStorage.getItem("agedata")
+console.log(agedata)
 
 
 
-let matchedInfo = dentalinfo.find(info => `${childAge}`=== info.childage)
+let matchedInfo = dentalinfo.find(info => agedata === info.id)
 
 
 
