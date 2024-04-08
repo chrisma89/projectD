@@ -47,10 +47,10 @@ const Age = () => {
   };
 
   return (
-    <div className="container-fluid d-flex justify-content-center align-items-center">
-      <h2>Please input your child's Date of birth</h2>
-      <div>
-        <DatePicker
+    <div className="container-fluid d-flex flex-column align-items-center justify-content-center" style={{backgroundColor : "#032B43", height : "100vh", padding : "40px", color : "#FFBA08"}}>
+      <h2>Enter child's Date of Birth</h2>
+      <div className= "conatiner-fluid d-flex" style= {{padding : "20px"}}>
+        <DatePicker 
           placeholderText="Click to select a date"
           dateFormat="dd/MM/yyyy"
           showMonthDropdown
@@ -58,6 +58,7 @@ const Age = () => {
           dropdownMode="select"
           showIcon
           selected={date}
+          maxDate={new Date()}
           onChange={(date) => {
             setDate(date);
           }}
@@ -67,7 +68,7 @@ const Age = () => {
       Your child's age is : 
     </div> */}
       <div>
-        <button
+        <button style={{backgroundColor : "#FFBA08", color : "#032B4", padding : "10px"}}
           onClick={() => {
             {
               displayinfo;
