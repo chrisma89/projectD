@@ -26,7 +26,7 @@ let matchedInfo = dentalinfo.find(info => agedata === info.id)
       <div>Toothbrush : {matchedInfo.toothbrush}</div>
     <div>Brushing Frequency : {matchedInfo.frequency}</div>
     <div>Toothpaste : {matchedInfo.toothpaste}</div>
-    <div>Visits to your dentist{matchedInfo.dentalvisit}</div>
+    <div>Visits to your dentist : {matchedInfo.dentalvisit}</div>
     <div>Dietary advice : {matchedInfo.food}</div>
       </>
   )

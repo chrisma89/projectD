@@ -20,7 +20,13 @@ const Age = () => {
 
   // info page toggle done on clicking the button
   const displayinfo = () => {
-    setInfo(true);
+    if(dats){
+      setInfo(true);
+    }
+    else {
+      alert("Please enter valid date")
+    }
+    
   };
 
   // conditional to check if info is truthy
@@ -41,7 +47,7 @@ const Age = () => {
   };
 
   return (
-    <>
+    <div className="container-fluid d-flex justify-content-center align-items-center">
       <h2>Please input your child's Date of birth</h2>
       <div>
         <DatePicker
@@ -74,7 +80,7 @@ const Age = () => {
           Get Dental Information
         </button>
       </div>
-    </>
+    </div>
   );
 };
 
