@@ -19,7 +19,7 @@ let matchedInfo = dentalinfo.find(info => agedata === info.id)
 
   // if (childage)
   return ( 
-    <div>  
+    <div className="container-fluid d-flex flex-column align-items-center" style={{backgroundColor : "#032B43", height : "100vh", padding : "40px", color : "#FFBA08"}}>  
       {/* <div>{ageData}</div> */}
     {matchedInfo ? (
       <>  
