@@ -21,7 +21,7 @@ const ToothInfo = ({ childAge, ageUnit }) => {
             {" "}
             <Card style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
               <Card.Title style={{fontSize : "2rem"}}>
-                Toothbrush :
+                <img src="public/icons/tooth-brush.png" style={{height : "10vh", width : "auto"}}></img>
               </Card.Title>
               <Card.Body style={{fontSize : "1.6rem"}}>{matchedInfo.toothbrush}</Card.Body>
             </Card>
