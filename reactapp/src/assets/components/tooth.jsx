@@ -2,6 +2,10 @@ import dentalinfo from "../../dentalinfo.json";
 import CustomInfo from "./custominfo";
 import React from "react";
 import { useState } from "react";
+import Card from 'react-bootstrap/Card';
+
+
+
 
 const ToothInfo = ({childAge, ageUnit}) => {
 
@@ -19,15 +23,33 @@ let matchedInfo = dentalinfo.find(info => agedata === info.id)
 
   // if (childage)
   return ( 
-    <div className="container-fluid d-flex flex-column align-items-center" style={{backgroundColor : "#032B43", height : "100vh", padding : "40px", color : "#FFBA08"}}>  
+    <div>  
       {/* <div>{ageData}</div> */}
     {matchedInfo ? (
       <>  
-      <div>Toothbrush : {matchedInfo.toothbrush}</div>
-    <div>Brushing Frequency : {matchedInfo.frequency}</div>
-    <div>Toothpaste : {matchedInfo.toothpaste}</div>
-    <div>Visits to your dentist : {matchedInfo.dentalvisit}</div>
-    <div>Dietary advice : {matchedInfo.food}</div>
+      
+    <Card>
+    <Card.Title style={{textAlign : "center"}}>Toothbrush :</Card.Title>
+      <Card.Body>{matchedInfo.toothbrush}</Card.Body>
+    </Card>
+    <Card>
+    <Card.Title>Brushing Frequency : </Card.Title>
+      <Card.Body>{matchedInfo.frequency}</Card.Body>
+    </Card>
+    <Card>
+    <Card.Title>Toothpaste : </Card.Title>
+      <Card.Body>{matchedInfo.toothpaste}</Card.Body>
+    </Card>
+    <Card>
+    <Card.Title>Visits to your dentist : </Card.Title>
+      <Card.Body>{matchedInfo.dentalvisit}</Card.Body>
+    </Card>
+    <Card>
+    <Card.Title>Dietary advice : </Card.Title>
+      <Card.Body>{matchedInfo.food}</Card.Body>
+    </Card>
+
+   
       </>
   )
   :
