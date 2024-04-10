@@ -48,7 +48,12 @@ const Age = () => {
 
   return (
     <div className="container-fluid d-flex flex-column align-items-center justify-content-center" style={{backgroundColor : "#032B43", height : "100vh", padding : "40px", color : "#FFBA08"}}>
-      <h2>Enter child's Date of Birth</h2>
+      <div className="container-fluid d-flex flex-column justify-content-center align-items-center" style={{padding : "50px"}}>
+        <h2>Welcome to Dental App</h2>
+      <h5>All the information you need to take care of your child's teeth.</h5>
+      </div>
+      
+      <h4>Enter child's Date of Birth</h4>
       <div className= "conatiner-fluid d-flex" style= {{padding : "20px"}}>
         <DatePicker 
           placeholderText="Click to select a date"
