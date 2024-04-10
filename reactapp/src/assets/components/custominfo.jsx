@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import dentalinfo from "../../dentalinfo.json";
 import ToothInfo from "./tooth";
 import Footer from "./footer";
+import Navigation from "./navigation";
 
 const CustomInfo = () => {
   const [childAge, setChildAge] = useState("");
@@ -56,6 +57,7 @@ const CustomInfo = () => {
 
   return (
     <>
+    {/* <Navigation /> */}
       {" "}
       <div
         className="container-fluid d-flex flex-column align-items-center justify-content-center"
