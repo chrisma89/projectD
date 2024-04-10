@@ -11,10 +11,11 @@
 {
   "id" : "1",
   "agegroup" : "0-6months",
-  "toothbrush" : "use a small, soft toothbrush. Place the head (bristles) of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Brushing back and forth can hurt the gums and teeth. Do all sides of the teeth.",
-  "toothpaste" : "Toothpaste contaning atleast 1000ppm of Fluroide, using only a smear of toothpaste",
+  "brushingtechnique" : "Use a clean gauze pad or soft cloth over your finger. Dip the gauze in water so it is damp, but not soaking wet. Wipe your child's gums gently.Place the head (bristles) of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Brushing back and forth can hurt the gums and teeth. Do all sides of the teeth/tooth",
+  "toothbrush" : "Use a small, soft toothbrush",
+  "toothpaste" : "If tooth/teeth have not come through, no need for toothpaste. If tooth/teeth is present,Toothpaste containing atleast 1000ppm of Fluroide, using only a smear of toothpaste",
   "frequency" : "last thing before bedtime and on one other occasion",
-    "dentalvisit" : "As soon as the first tooth erupts and follow your dentist's recommendation for further viists",
+    "dentalvisit" : "As soon as the first tooth erupts and follow your dentist's recommendation for further visits",
     "food" : "Avoid adding sugar to foods and drinks, minimize consumption of sugary items, and especially avoid them before bedtime as saliva flow is reduces at night."
 },
 {
@@ -22,6 +23,7 @@
   "agegroup" : "6months-3years",
   "toothbrush" : "use a small, soft toothbrush. Place the head (bristles) of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Brushing back and forth can hurt the gums and teeth. Do all sides of the teeth.",
   "toothpaste" : "Toothpaste contaning atleast 1000ppm of Fluroide, using only a smear of toothpaste",
+  "brushingtechnique" : "Place the head (bristles) of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Brushing back and forth can hurt the gums and teeth. Do all sides of the teeth/tooth",
   "frequency" : "last thing before bedtime and on one other occasion",
     "dentalvisit" : "As soon as the first tooth erupts and follow your dentist's recommendation for further viists",
     "food" : "Avoid adding sugar to foods and drinks, minimize consumption of sugary items, and especially avoid them before bedtime as saliva flow is reduces at night."
@@ -31,6 +33,7 @@
   "agegroup" : "3-6years",
   "toothbrush" : "Parental supervision and help with brushing is necessary to help get all teeth clean. use a small toothbrush head, medium texture. Place the head (bristles) of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Brushing back and forth can hurt the gums and teeth. Do all sides of the teeth.",
   "toothpaste" : "Toothpaste containing 1,350 to 1,500 ppm fluoride, using only a pea-sized amount of toothpaste",
+  "brushingtechnique" : "Place the head (bristles) of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Brushing back and forth can hurt the gums and teeth. Do all sides of the teeth/tooth",
   "frequency" : "last thing before bedtime and on one other occasion",
     "dentalvisit" : "Every 6 months unless specified differently by your dentist",
     "food" : "Avoid adding sugar to foods and drinks, minimize consumption of sugary items, and especially avoid them before bedtime as saliva flow is reduces at night."
@@ -41,6 +44,7 @@
   "toothbrush" : "Use a small toothbrush head, medium texture. Place the head (bristles) of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Brushing back and forth can hurt the gums and teeth. Do all sides of the teeth.",
   "interdental" : "Clean daily between the teeth to below the gum line before toothbrushing. Where there is space for an interdental or single-tufted brush, this should be used.For small spaces between teeth, use dental floss or tape.",
   "toothpaste" : "Toothpaste containing 1,350 to 1,500 ppm fluoride, using only a pea-sized amount of toothpaste",
+  "brushingtechnique" : "Place the head (bristles) of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Brushing back and forth can hurt the gums and teeth. Do all sides of the teeth/tooth",
   "frequency" : "last thing before bedtime and on one other occasion",
     "dentalvisit" : "Every 6 months unless specified differently by your dentist",
     "food" : "Avoid adding sugar to foods and drinks, minimize consumption of sugary items, and especially avoid them before bedtime as saliva flow is reduces at night."

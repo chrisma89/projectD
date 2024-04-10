@@ -39,7 +39,7 @@ const CustomInfo = () => {
       setChildAge(ageMonths);
       setAgeUnit("months");
       if (ageMonths <= 6) {
-        localStorage.setItem("agedata", 0);
+        localStorage.setItem("agedata", 1);
       } else {
         localStorage.setItem("agedata", 1);
       }
