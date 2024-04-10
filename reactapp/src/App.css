@@ -40,3 +40,19 @@
 .read-the-docs {
   color: #888;
 } */
+
+.footer {
+  font-size: 1.5rem;
+  color:#032B43;
+  padding: 6px;
+  flex-direction: row;
+  align-items: right;
+  background-color: #FFBA08;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+  }
+}

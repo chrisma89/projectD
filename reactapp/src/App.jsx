@@ -9,6 +9,7 @@ function App() {
       <div>
       <Age />
       {/* <CustomInfo /> */}
+      
   </div>
   )
 
