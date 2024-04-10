@@ -35,12 +35,17 @@ const ToothInfo = ({ childAge, ageUnit }) => {
 
   // if (childage)
   return (
-    <div>
-     
-      {/* <div>{ageData}</div> */}
+    <div className="container-fluid d-flex flex-column align-items-center justify-content-center"
+    style={{
+      backgroundColor: "#032B43",
+      height: "",
+      padding: "40px",
+      color: "#FFBA08"}}>
+    
       {matchedInfo ? (
         <>
-        <Navbar bg="light" expand="lg">
+        {/* <div className ="d-flex justify-content-center" style={{backgroundColor: "#FFBA08"}}> */}
+          <Navbar expand="lg">
         <Navbar.Brand href="#home">Dental Info</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -57,6 +62,12 @@ const ToothInfo = ({ childAge, ageUnit }) => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+        {/* </div> */}
+        
+
+      <Container className="d-flex justify-content-center align-items-center" style={{ fontSize: "1.6rem" }}>
+          Your child is {childAge} {ageUnit} old
+        </Container>
           <Container className = "d-flex flex-column" style={{ textAlign: "center" }}>
             {" "}
             <Card ref={toothbrushRef} style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
