@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import dentalinfo from "../../dentalinfo.json";
 import ToothInfo from "./tooth";
 import Footer from "./footer";
-import Navigation from "./navigation";
+// import Navigation from "./navigation";
+//  import FirstTooth from "./firsttooth";
 
 const CustomInfo = () => {
   const [childAge, setChildAge] = useState("");
@@ -72,6 +73,7 @@ const CustomInfo = () => {
         <div style={{ fontSize: "1.6rem" }}>
           Your child is {childAge} {ageUnit} old
         </div>
+        {/* <FirstTooth /> */}
         <ToothInfo childAge={childAge} ageUnit={ageUnit} />
       </div>
       <Footer />

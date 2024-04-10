@@ -50,7 +50,7 @@ const Age = () => {
     <div className="container-fluid d-flex flex-column align-items-center justify-content-center" style={{backgroundColor : "#032B43", height : "100vh", padding : "40px", color : "#FFBA08"}}>
       <div className="container-fluid d-flex flex-column justify-content-center align-items-center" style={{padding : "50px"}}>
         <h2>Welcome to Dental App</h2>
-      <h5>All the information you need to take care of your child's teeth.</h5>
+      <h5>Tiny Teeth, Big Smiles: Nurturing Your Child's Dental Health</h5>
       </div>
       
       <h4>Enter child's Date of Birth</h4>

@@ -1,19 +1,34 @@
 import dentalinfo from "../../dentalinfo.json";
 import CustomInfo from "./custominfo";
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container"
+import FirstTooth from "./firsttooth";
+
+
 const ToothInfo = ({ childAge, ageUnit }) => {
   let ageData = `${childAge} ${ageUnit}`;
   let agedata = localStorage.getItem("agedata");
-  console.log(agedata);
+  // console.log(agedata);
 
+  const [firsttooth, setFirsttooth] = useState(false)
+
+  useEffect(() => {
+    // const agedata = localStorage.getItem("agedata");
+    console.log(agedata);
+    if (agedata <= 1) {
+      setFirsttooth(true);
+    }
+  }, [agedata]);
+
+ 
   let matchedInfo = dentalinfo.find((info) => agedata === info.id);
 
   // if (childage)
   return (
     <div>
+      {firsttooth && <FirstTooth />}
       {/* <div>{ageData}</div> */}
       {matchedInfo ? (
         <>
@@ -21,12 +36,12 @@ const ToothInfo = ({ childAge, ageUnit }) => {
             {" "}
             <Card style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
               <Card.Title style={{fontSize : "2rem"}}>
-                <img src="public/icons/tooth-brush.png" style={{height : "10vh", width : "auto"}}></img>
+                <img src="/icons/tooth-brush.png" style={{height : "10vh", width : "auto"}}></img>
               </Card.Title>
               <Card.Body style={{fontSize : "1.6rem"}}>{matchedInfo.toothbrush}</Card.Body>
             </Card>
             <Card style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
-              <Card.Title style={{fontSize : "2rem"}}> <img src="public/icons/brushingfrquency.png" style={{height : "10vh", width : "auto"}}></img> </Card.Title>
+              <Card.Title style={{fontSize : "2rem"}}> <img src="/icons/brushingfrquency.png" style={{height : "10vh", width : "auto"}}></img> </Card.Title>
               <Card.Body style={{fontSize : "1.6rem"}}>{matchedInfo.frequency}</Card.Body>
             </Card>
             <Card style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
