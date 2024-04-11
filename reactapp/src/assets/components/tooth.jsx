@@ -34,18 +34,11 @@ const ToothInfo = ({ childAge, ageUnit }) => {
   
 
   // if (childage)
-  return (
-    <div className="container-fluid d-flex flex-column align-items-center justify-content-center"
-    style={{
-      backgroundColor: "#032B43",
-      height: "",
-      padding: "40px",
+  return ( 
+  <>
+  <Navbar expand="lg" style={{
+      backgroundColor: "#FFBA08",
       color: "#FFBA08"}}>
-    
-      {matchedInfo ? (
-        <>
-        {/* <div className ="d-flex justify-content-center" style={{backgroundColor: "#FFBA08"}}> */}
-          <Navbar expand="lg">
         <Navbar.Brand href="#home">Dental Info</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -62,6 +55,17 @@ const ToothInfo = ({ childAge, ageUnit }) => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+    <div  className="container-fluid d-flex flex-column align-items-center justify-content-center"
+    style={{
+      backgroundColor: "#032B43",
+      height: "",
+      padding: "40px",
+      color: "#FFBA08"}}>
+    
+      {matchedInfo ? (
+        <>
+        {/* <div className ="d-flex justify-content-center" style={{backgroundColor: "#FFBA08"}}> */}
+         
         {/* </div> */}
         
 
@@ -103,6 +107,7 @@ const ToothInfo = ({ childAge, ageUnit }) => {
         <div>No matches found</div>
       )}
     </div>
+    </>
   );
 };
 
