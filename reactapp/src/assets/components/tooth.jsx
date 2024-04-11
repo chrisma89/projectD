@@ -39,18 +39,18 @@ const ToothInfo = ({ childAge, ageUnit }) => {
   <Navbar expand="lg" style={{
       backgroundColor: "#FFBA08",
       color: "#FFBA08"}}>
-        <Navbar.Brand href="#home">Dental Info</Navbar.Brand>
+        <Navbar.Brand href="#home" style={{fontSize : "2rem", paddingLeft : "10px"}}>Dental Info</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link onClick={() => scrollToRef(toothbrushRef)}> <img src="/icons/tooth-brush.png" style={{height : "10vh", width : "auto"}}/></Nav.Link>
-            <Nav.Link onClick={() => scrollToRef(toothpasteRef)}><img src="/icons/toothpaste.png" style={{height : "10vh", width : "auto"}}></img></Nav.Link>
+          <Nav className="container-fluid d-flex justify-content-end align-content-end">
+            <Nav.Link onClick={() => scrollToRef(toothbrushRef)}> <img src="/icons/tooth-brush.png" style={{height : "8vh", width : "auto", margin : "4px"}}/></Nav.Link>
+            <Nav.Link onClick={() => scrollToRef(toothpasteRef)}><img src="/icons/toothpaste.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
             
-            <Nav.Link onClick={() => scrollToRef(techniqueRef)}><img src="/icons/brushing.png" style={{height : "10vh", width : "auto"}}></img></Nav.Link>
-            <Nav.Link onClick={() => scrollToRef(frequencyRef)}> <img src="/icons/brushingfrquency.png" style={{height : "10vh", width : "auto"}}></img></Nav.Link>
+            <Nav.Link onClick={() => scrollToRef(techniqueRef)}><img src="/icons/brushing.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
+            <Nav.Link onClick={() => scrollToRef(frequencyRef)}> <img src="/icons/brushingfrquency.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
             
-            <Nav.Link onClick={() => scrollToRef(scheduleRef)}><img src="/icons/calendar.png" style={{height : "10vh", width : "auto"}}></img></Nav.Link>
-            <Nav.Link onClick={() => scrollToRef(foodRef)}><img src="/icons/food.png" style={{height : "10vh", width : "auto"}}></img></Nav.Link>
+            <Nav.Link onClick={() => scrollToRef(scheduleRef)}><img src="/icons/calendar.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
+            <Nav.Link onClick={() => scrollToRef(foodRef)}><img src="/icons/food.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
             {/* Add more Nav.Link elements for each card */}
           </Nav>
         </Navbar.Collapse>
