@@ -40,6 +40,12 @@ const ToothInfo = ({ childAge, ageUnit }) => {
     ));
   }
 
+
+  const brushing = () => {
+    return matchedInfo.brushingtechnique.map((sentence, index) => (
+      <p key={index}>{sentence}</p>
+    ));
+  }
   // const sentences = text.split('. ');
 
   // if (childage)
@@ -96,7 +102,7 @@ const ToothInfo = ({ childAge, ageUnit }) => {
             </Card>
             <Card ref={techniqueRef}  style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
               <Card.Title style={{fontSize : "2rem"}}> <img src="/icons/brushing.png" style={{height : "10vh", width : "auto"}}></img> </Card.Title>
-              <Card.Body style={{fontSize : "1.6rem"}}>{matchedInfo.brushingtechnique}</Card.Body>
+              <Card.Body style={{fontSize : "1.6rem"}}>{brushing()}</Card.Body>
             </Card>
             <Card ref={frequencyRef} style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
               <Card.Title style={{fontSize : "2rem"}}> <img src="/icons/brushingfrquency.png" style={{height : "10vh", width : "auto"}}></img> </Card.Title>
