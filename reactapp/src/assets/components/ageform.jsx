@@ -2,6 +2,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import React, { useEffect, useState } from "react";
 import CustomInfo from "./custominfo";
+import FirstTooth from "./firsttooth";
 
 const Age = () => {
 
@@ -9,6 +10,7 @@ const Age = () => {
   // Initialised info page toggle based on user click
   const [date, setDate] = useState(null);
   const [info, setInfo] = useState(false);
+  // const [toothone, settoothone] = useState("")
 
   // store the birthdate input by user on the date picker
   useEffect(() => {
@@ -31,6 +33,7 @@ const Age = () => {
 
   // conditional to check if info is truthy
   if (info) {
+
     return <CustomInfo />;
   }
 
@@ -45,6 +48,10 @@ const Age = () => {
       console.log(retrievedDate);
     }
   };
+
+
+  
+
 
   return (
     <div className="container-fluid d-flex flex-column align-items-center justify-content-center" style={{backgroundColor : "#032B43", height : "100vh", padding : "40px", color : "#FFBA08"}}>
@@ -65,13 +72,15 @@ const Age = () => {
           selected={date}
           maxDate={new Date()}
           onChange={(date) => {
-            setDate(date);
+            setDate(date)
+            settoothone()
           }}
         />
       </div>
       {/* <div>
       Your child's age is : 
     </div> */}
+    {/* <FirstTooth /> */}
       <div>
         <button style={{backgroundColor : "#FFBA08", color : "#032B4", padding : "10px"}}
           onClick={() => {

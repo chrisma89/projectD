@@ -1,11 +1,13 @@
 const FirstTooth = () => {
 
-
+const isPresent =()=> {
+  localStorage.setItem("agedata" , )
+}
 
    return ( 
     <>
     <div>Has the first tooth come through?</div>
-    <button >YES</button>
+    <button onClick={isPresent()} >YES</button>
     <button>NO</button>
     </> 
    );
