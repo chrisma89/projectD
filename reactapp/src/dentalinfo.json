@@ -16,7 +16,8 @@
   "toothpaste" : "If no tooth has come through yet, no need for toothpaste. If tooth/teeth is present,use oothpaste containing atleast 1000ppm of Fluroide. Amount : A smear of toothpaste.",
   "frequency" : "Last thing before bedtime and on one other occasion",
     "dentalvisit" : "As soon as the first tooth erupts and follow your dentist's recommendation for further visits",
-    "food" : "Avoid adding sugar to foods and drinks, minimize consumption of sugary items, and especially avoid them before bedtime as saliva flow is reduces at night."
+    "food" : "Avoid adding sugar to foods and drinks, minimize consumption of sugary items, and especially avoid them before bedtime as saliva flow is reduces at night.",
+    "advice" : "First tooth is expected from around 6 months of age. If the tooth hasnt come through after first birthday, consult your dentist for advice"
 },
 {
   "id" : "2",

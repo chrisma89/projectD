@@ -21,6 +21,7 @@ const ToothInfo = ({ childAge, ageUnit }) => {
   const frequencyRef = useRef(null);
   const scheduleRef = useRef(null);
   const foodRef = useRef(null);
+  const adviceRef = useRef(null);
   
 
  
@@ -51,6 +52,7 @@ const ToothInfo = ({ childAge, ageUnit }) => {
             
             <Nav.Link onClick={() => scrollToRef(scheduleRef)}><img src="/icons/calendar.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
             <Nav.Link onClick={() => scrollToRef(foodRef)}><img src="/icons/food.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
+            <Nav.Link onClick={() => scrollToRef(adviceRef)}><img src="/icons/advice.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
             {/* Add more Nav.Link elements for each card */}
           </Nav>
         </Navbar.Collapse>
@@ -100,6 +102,10 @@ const ToothInfo = ({ childAge, ageUnit }) => {
             <Card ref={foodRef} style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
               <Card.Title style={{fontSize : "2rem"}}><img src="/icons/food.png" style={{height : "10vh", width : "auto"}}></img></Card.Title>
               <Card.Body style={{fontSize : "1.6rem"}}>{matchedInfo.food}</Card.Body>
+            </Card>
+            <Card ref={adviceRef} style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
+              <Card.Title style={{fontSize : "2rem"}}><img src="/icons/advice.png" style={{height : "10vh", width : "auto"}}></img></Card.Title>
+              <Card.Body style={{fontSize : "1.6rem"}}>{matchedInfo.advice}</Card.Body>
             </Card>
           </Container>
         </>

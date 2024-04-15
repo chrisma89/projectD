@@ -10,3 +10,5 @@
 <a href="https://www.flaticon.com/free-icons/calendar" title="calendar icons">Calendar icons created by SyafriStudio - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/healthy-food" title="healthy food icons">Healthy food icons created by tulpahn - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/tooth-brush" title="Tooth Brush icons">Tooth Brush icons created by amonrat rungreangfangsai - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/dentist" title="dentist icons">Dentist icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/dental-advice" title="dental advice icons">Dental advice icons created by piksart - Flaticon</a>
