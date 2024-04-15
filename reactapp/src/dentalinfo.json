@@ -44,7 +44,7 @@
 {
   "id" : "3",
   "agegroup" : "3-6years",
-  "toothbrush" : "Parental supervision and help with brushing is necessary to help get all teeth clean. use a small toothbrush head, medium texture. Place the head (bristles) of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Brushing back and forth can hurt the gums and teeth. Do all sides of the teeth.",
+  "toothbrush" : "Parental supervision and help with brushing is necessary to help get all teeth clean. Manual Brush : Use a medium bristle texture brush with a small head. Electric toothbrush is recommended",
   "toothpaste" : "Toothpaste containing 1,350 to 1,500 ppm fluoride, using only a pea-sized amount of toothpaste",
   "brushingtechnique" : [
     "Place the bristles of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Clean all the surfaces of the teeth.",
@@ -60,7 +60,7 @@
 {
   "id" : "4",
   "agegroup" : "7-18years",
-  "toothbrush" : "Use a small toothbrush head, medium texture. Place the head (bristles) of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Brushing back and forth can hurt the gums and teeth. Do all sides of the teeth.",
+  "toothbrush" : "Manual Brush : Use a medium bristle texture brush with a small head. Electric toothbrush is recommended",
   "interdental" : "Clean daily between the teeth to below the gum line before toothbrushing. Where there is space for an interdental or single-tufted brush, this should be used.For small spaces between teeth, use dental floss or tape.",
   "toothpaste" : "Toothpaste containing 1,350 to 1,500 ppm fluoride, using only a pea-sized amount of toothpaste",
   "brushingtechnique" : [
