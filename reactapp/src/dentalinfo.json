@@ -11,12 +11,15 @@
 {
   "id" : "1",
   "agegroup" : "0-6months",
-  "brushingtechnique" : "Use a clean gauze pad or soft cloth over your finger. Dip the gauze in water so it is damp, but not soaking wet. Wipe your child's gums gently.Place the head (bristles) of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Brushing back and forth can hurt the gums and teeth. Do all sides of the teeth/tooth",
-  "toothbrush" : "if the first tooth has come through, use a small, soft toothbrush. Replace toothbrush every 3 months",
-  "toothpaste" : "If no tooth has come through yet, no need for toothpaste. If tooth/teeth is present,use oothpaste containing atleast 1000ppm of Fluroide. Amount : A smear of toothpaste.",
-  "frequency" : "Last thing before bedtime and on one other occasion",
-    "dentalvisit" : "As soon as the first tooth erupts and follow your dentist's recommendation for further visits",
-    "food" : "Avoid adding sugar to foods and drinks, minimize consumption of sugary items, and especially avoid them before bedtime as saliva flow is reduces at night.",
+  "brushingtechnique" : "Use a clean gauze pad or soft cloth over your finger. Dip the gauze in water so it is damp, but not soaking wet. Wipe your child's gums gently.Place the bristles of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Brushing back and forth can hurt the gums and teeth. Clean all the surfaces of the teeth.",
+  "toothbrush" : "If the first tooth has come through, use a small, soft toothbrush. Replace toothbrush every 3 months.",
+  "toothpaste" : "If no tooth has come through yet, no need for toothpaste. If teeth are present,use oothpaste containing atleast 1000ppm of Fluroide. Amount : A smear of toothpaste.",
+  "frequency" : "Last thing before bed and on one other occasion.",
+    "dentalvisit" : "As soon as the first tooth erupts and follow your dentist's recommendation for further visits.",
+    "food" : [ "Avoid adding sugar to foods and drinks.",
+     "Minimize consumption of sugary items.",
+      "Especially avoid sugars before bedtime as saliva flow is reduces at night."
+    ],
     "advice" : "First tooth is expected from around 6 months of age. If the tooth hasnt come through after first birthday, consult your dentist for advice"
 },
 {

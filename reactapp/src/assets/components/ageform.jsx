@@ -73,7 +73,7 @@ const Age = () => {
           maxDate={new Date()}
           onChange={(date) => {
             setDate(date)
-            settoothone()
+           
           }}
         />
       </div>

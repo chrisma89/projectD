@@ -32,7 +32,15 @@ const ToothInfo = ({ childAge, ageUnit }) => {
  
   let matchedInfo = dentalinfo.find((info) => agedata === info.id);
 
-  
+  // let foodAdvice = JSON.parse(matchedInfo.food).text.split('. ');
+
+  const food = () => {
+    return matchedInfo.food.map((sentence, index) => (
+      <p key={index}>{sentence}</p>
+    ));
+  }
+
+  // const sentences = text.split('. ');
 
   // if (childage)
   return ( 
@@ -101,7 +109,7 @@ const ToothInfo = ({ childAge, ageUnit }) => {
             </Card>
             <Card ref={foodRef} style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
               <Card.Title style={{fontSize : "2rem"}}><img src="/icons/food.png" style={{height : "10vh", width : "auto"}}></img></Card.Title>
-              <Card.Body style={{fontSize : "1.6rem"}}>{matchedInfo.food}</Card.Body>
+              <Card.Body style={{fontSize : "1.6rem"}}>{food()}</Card.Body>
             </Card>
             <Card ref={adviceRef} style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
               <Card.Title style={{fontSize : "2rem"}}><img src="/icons/advice.png" style={{height : "10vh", width : "auto"}}></img></Card.Title>
