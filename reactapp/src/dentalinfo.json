@@ -28,14 +28,14 @@
 {
   "id" : "2",
   "agegroup" : "6months-3years",
-  "toothbrush" : "use a small, soft toothbrush. Place the head (bristles) of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Brushing back and forth can hurt the gums and teeth. Do all sides of the teeth.",
-  "toothpaste" : "Toothpaste contaning atleast 1000ppm of Fluroide, using only a smear of toothpaste",
+  "toothbrush" : "Use a small, soft toothbrush. Replace toothbrush every 3 months.",
+  "toothpaste" : "Toothpaste containing atleast 1000ppm of Fluroide, Amount : A smear of toothpaste.",
   "brushingtechnique" : [
   "Place the bristles of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Clean all the surfaces of the teeth.",
    "Brushing back and forth can hurt the gums and teeth."
   ],
-  "frequency" : "last thing before bedtime and on one other occasion",
-    "dentalvisit" : "As soon as the first tooth erupts and follow your dentist's recommendation for further viists",
+  "frequency" : "Last thing before bed and on one other occasion.",
+    "dentalvisit" : "As soon as the first tooth erupts and follow your dentist's recommendation for further visits",
     "food" : [ "Avoid adding sugar to foods and drinks.",
     "Minimize consumption of sugary items.",
      "Especially avoid sugars before bedtime as saliva flow is reduces at night."
@@ -45,7 +45,7 @@
   "id" : "3",
   "agegroup" : "3-6years",
   "toothbrush" : "Parental supervision and help with brushing is necessary to help get all teeth clean. Manual Brush : Use a medium bristle texture brush with a small head. Electric toothbrush is recommended",
-  "toothpaste" : "Toothpaste containing 1,350 to 1,500 ppm fluoride, using only a pea-sized amount of toothpaste",
+  "toothpaste" : "Toothpaste containing 1,350 to 1,500 ppm fluoride. Amount : A pea-sized amount of toothpaste",
   "brushingtechnique" : [
     "Place the bristles of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Clean all the surfaces of the teeth.",
      "Brushing back and forth can hurt the gums and teeth."
@@ -61,8 +61,8 @@
   "id" : "4",
   "agegroup" : "7-18years",
   "toothbrush" : "Manual Brush : Use a medium bristle texture brush with a small head. Electric toothbrush is recommended",
-  "interdental" : "Clean daily between the teeth to below the gum line before toothbrushing. Where there is space for an interdental or single-tufted brush, this should be used.For small spaces between teeth, use dental floss or tape.",
-  "toothpaste" : "Toothpaste containing 1,350 to 1,500 ppm fluoride, using only a pea-sized amount of toothpaste",
+  "interdental" : "Clean daily between the teeth to below the gum line before toothbrushing. Where there is space for an interdental or single-tufted brush, this should be used. For small spaces between teeth, use dental floss or tape.",
+  "toothpaste" : "Toothpaste containing 1,350 to 1,500 ppm fluoride, spitting out after brushing rather than rinsing with water, to avoid diluting the fluoride concentration",
   "brushingtechnique" : [
     "Place the bristles of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Clean all the surfaces of the teeth.",
      "Brushing back and forth can hurt the gums and teeth."
