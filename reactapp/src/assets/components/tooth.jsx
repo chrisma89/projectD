@@ -110,38 +110,38 @@ const ToothInfo = ({ childAge, ageUnit }) => {
           <Container className = "d-flex flex-column" style={{ textAlign: "center" }}>
             {" "}
             <Card ref={toothbrushRef} style={{margin : "20px", padding : "20px",  backgroundColor: "rgba(255, 186, 8, 1)" , color : "#032B43"}}>
-              <Card.Title style={{fontSize : "2rem"}}>
+              <Card.Title style={{fontSize : "2rem"}}>Toothbrush 
                 <img src="/icons/tooth-brush.png" style={{height : "10vh", width : "auto"}}></img>
               </Card.Title>
               <Card.Body style={{fontSize : "1.6rem"}}>{toothbrush()}</Card.Body>
             </Card> 
             <Card ref={toothpasteRef}  style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
-              <Card.Title style={{fontSize : "2rem"}}> <img src="/icons/toothpaste.png" style={{height : "10vh", width : "auto"}}></img> </Card.Title>
+              <Card.Title style={{fontSize : "2rem"}}>Toothpaste <img src="/icons/toothpaste.png" style={{height : "10vh", width : "auto"}}></img> </Card.Title>
               <Card.Body style={{fontSize : "1.6rem"}}>{toothpaste()}</Card.Body>
             </Card>
             <Card ref={interdentalRef}  style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
-              <Card.Title style={{fontSize : "2rem"}}> <img src="/icons/interdental.png" style={{height : "10vh", width : "auto"}}></img> </Card.Title>
+              <Card.Title style={{fontSize : "2rem"}}>Interdental Cleaning <img src="/icons/interdental.png" style={{height : "10vh", width : "auto"}}></img> </Card.Title>
               <Card.Body style={{fontSize : "1.6rem"}}>{interdental()}</Card.Body>
             </Card>
             <Card ref={techniqueRef}  style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
-              <Card.Title style={{fontSize : "2rem"}}> <img src="/icons/brushing.png" style={{height : "10vh", width : "auto"}}></img> </Card.Title>
+              <Card.Title style={{fontSize : "2rem"}}>Brushing Technique <img src="/icons/brushing.png" style={{height : "10vh", width : "auto"}}></img> </Card.Title>
               <Card.Body style={{fontSize : "1.6rem"}}>{brushing()}</Card.Body>
             </Card>
             <Card ref={frequencyRef} style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
-              <Card.Title style={{fontSize : "2rem"}}> <img src="/icons/brushingfrquency.png" style={{height : "10vh", width : "auto"}}></img> </Card.Title>
+              <Card.Title style={{fontSize : "2rem"}}>Brushing Frequency <img src="/icons/brushingfrquency.png" style={{height : "10vh", width : "auto"}}></img> </Card.Title>
               <Card.Body style={{fontSize : "1.6rem"}}>{matchedInfo.frequency}</Card.Body>
             </Card>
            
             <Card ref={scheduleRef} style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
-              <Card.Title style={{fontSize : "2rem"}}><img src="/icons/calendar.png" style={{height : "10vh", width : "auto"}}></img> </Card.Title>
+              <Card.Title style={{fontSize : "2rem"}}>Dental Visits <img src="/icons/calendar.png" style={{height : "10vh", width : "auto"}}></img> </Card.Title>
               <Card.Body style={{fontSize : "1.6rem"}}>{matchedInfo.dentalvisit}</Card.Body>
             </Card>
             <Card ref={foodRef} style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
-              <Card.Title style={{fontSize : "2rem"}}><img src="/icons/food.png" style={{height : "10vh", width : "auto"}}></img></Card.Title>
+              <Card.Title style={{fontSize : "2rem"}}>Dietary Advice <img src="/icons/food.png" style={{height : "10vh", width : "auto"}}></img></Card.Title>
               <Card.Body style={{fontSize : "1.6rem"}}>{food()}</Card.Body>
             </Card>
             <Card ref={adviceRef} style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
-              <Card.Title style={{fontSize : "2rem"}}><img src="/icons/advice.png" style={{height : "10vh", width : "auto"}}></img></Card.Title>
+              <Card.Title style={{fontSize : "2rem"}}>Dental Advice <img src="/icons/advice.png" style={{height : "10vh", width : "auto"}}></img></Card.Title>
               <Card.Body style={{fontSize : "1.6rem"}}>{matchedInfo.advice}</Card.Body>
             </Card>
           </Container>

@@ -16,13 +16,14 @@
   "Place the bristles of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Clean all the surfaces of the teeth.",
    "Brushing back and forth can hurt the gums and teeth."
   ],
-  "toothbrush" : ["If the first tooth has come through, use a small, soft toothbrush.", "Replace toothbrush every 3 months."],
+  "toothbrush" : ["If no teeth are present, use a clean gauze pad or a soft clean cloth.", "If the first tooth has come through, use a small, soft toothbrush.", "Replace toothbrush every 3 months."],
   "interdental" : ["Not recommended"],
-  "toothpaste" : ["If no tooth has come through yet, no need for toothpaste.", "If teeth are present,use toothpaste containing atleast 1000ppm of Fluroide. Amount : A smear of toothpaste."],
+  "toothpaste" : ["If no tooth has come through yet, no need for toothpaste.", "If teeth are present, use a toothpaste containing atleast 1000ppm of Fluroide.", "Amount : A smear of toothpaste."],
   "frequency" : "Last thing before bed and on one other occasion.",
     "dentalvisit" : "As soon as the first tooth erupts and follow your dentist's recommendation for further visits.",
-    "food" : [ "Avoid adding sugar to foods and drinks.",
-     "Minimize consumption of sugary items.",
+    "food" : [ 
+      "Only breastmilk, infant formula or cooled boiled water should be given in a bottle.",
+"Introduce to drinking from a free-flow cup from the age of 6 months.", "Feeding from a bottle should be discouraged from the age of 1 year.", "Avoid adding sugar to foods and drinks.",
       "Especially avoid sugars before bedtime as saliva flow is reduced at night."
     ],
     "advice" : "First tooth is expected from around 6 months of age. If the tooth hasn't come through after the first birthday, consult your dentist for advice"
