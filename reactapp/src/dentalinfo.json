@@ -6,6 +6,7 @@
     "toothpaste" : "not recommended",
     "frequency" : "last thing before bedtime and on one other occasion",
     "dentalvisit" : "As soon as the first tooth erupts",
+    "interdental" : "Not recommended",
     "food" : "Avoid adding sugar to foods and drinks, minimize consumption of sugary items, and especially avoid them before bedtime as saliva flow is reduced at night."
 },
 {
@@ -16,7 +17,7 @@
    "Brushing back and forth can hurt the gums and teeth."
   ],
   "toothbrush" : ["If the first tooth has come through, use a small, soft toothbrush.", "Replace toothbrush every 3 months."],
-  "interdental" : "Not recommended",
+  "interdental" : ["Not recommended"],
   "toothpaste" : ["If no tooth has come through yet, no need for toothpaste.", "If teeth are present,use toothpaste containing atleast 1000ppm of Fluroide. Amount : A smear of toothpaste."],
   "frequency" : "Last thing before bed and on one other occasion.",
     "dentalvisit" : "As soon as the first tooth erupts and follow your dentist's recommendation for further visits.",
@@ -30,7 +31,7 @@
   "id" : "2",
   "agegroup" : "6months-3years",
   "toothbrush" : ["Use a small, soft toothbrush.", "Replace toothbrush every 3 months."],
-  "interdental" : "Not recommended",
+  "interdental" : ["Not recommended"],
   "toothpaste" : ["Toothpaste containing atleast 1000ppm of Fluroide.", "Amount : A smear of toothpaste."],
   "brushingtechnique" : [
   "Place the bristles of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Clean all the surfaces of the teeth.",
@@ -47,7 +48,7 @@
   "id" : "3",
   "agegroup" : "3-6years",
   "toothbrush" : ["Parental supervision and help with brushing is necessary to help get all teeth clean.", "Manual Brush : Use a medium bristle texture brush with a small head.", "Electric toothbrush is recommended"],
-  "interdental" : "Not recommended",
+  "interdental" : ["Not recommended"],
   "toothpaste" : "Toothpaste containing 1,350 to 1,500 ppm fluoride. Amount : A pea-sized amount of toothpaste",
   "brushingtechnique" : [
     "Place the bristles of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Clean all the surfaces of the teeth.",

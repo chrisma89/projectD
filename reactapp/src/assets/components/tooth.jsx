@@ -22,6 +22,7 @@ const ToothInfo = ({ childAge, ageUnit }) => {
   const scheduleRef = useRef(null);
   const foodRef = useRef(null);
   const adviceRef = useRef(null);
+  const interdentalRef = useRef(null);
   
 
  
@@ -46,6 +47,24 @@ const ToothInfo = ({ childAge, ageUnit }) => {
       <p key={index}>{sentence}</p>
     ));
   }
+
+  const toothpaste = () => {
+    return matchedInfo.toothpaste.map((sentence, index) => (
+      <p key={index}>{sentence}</p>
+    ));
+  }
+
+  const toothbrush = () => {
+    return matchedInfo.toothbrush.map((sentence, index) => (
+      <p key={index}>{sentence}</p>
+    ));
+  }
+
+  const interdental = () => {
+    return matchedInfo.interdental.map((sentence, index) => (
+      <p key={index}>{sentence}</p>
+    ));
+  }
   // const sentences = text.split('. ');
 
   // if (childage)
@@ -60,7 +79,7 @@ const ToothInfo = ({ childAge, ageUnit }) => {
           <Nav className="container-fluid d-flex justify-content-end align-content-end">
             <Nav.Link onClick={() => scrollToRef(toothbrushRef)}> <img src="/icons/tooth-brush.png" style={{height : "8vh", width : "auto", margin : "4px"}}/></Nav.Link>
             <Nav.Link onClick={() => scrollToRef(toothpasteRef)}><img src="/icons/toothpaste.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
-            
+            <Nav.Link onClick={() => scrollToRef(interdentalRef)}><img src="/icons/interdental.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
             <Nav.Link onClick={() => scrollToRef(techniqueRef)}><img src="/icons/brushing.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
             <Nav.Link onClick={() => scrollToRef(frequencyRef)}> <img src="/icons/brushingfrquency.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
             
@@ -94,11 +113,15 @@ const ToothInfo = ({ childAge, ageUnit }) => {
               <Card.Title style={{fontSize : "2rem"}}>
                 <img src="/icons/tooth-brush.png" style={{height : "10vh", width : "auto"}}></img>
               </Card.Title>
-              <Card.Body style={{fontSize : "1.6rem"}}>{matchedInfo.toothbrush}</Card.Body>
+              <Card.Body style={{fontSize : "1.6rem"}}>{toothbrush()}</Card.Body>
             </Card> 
             <Card ref={toothpasteRef}  style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
               <Card.Title style={{fontSize : "2rem"}}> <img src="/icons/toothpaste.png" style={{height : "10vh", width : "auto"}}></img> </Card.Title>
-              <Card.Body style={{fontSize : "1.6rem"}}>{matchedInfo.toothpaste}</Card.Body>
+              <Card.Body style={{fontSize : "1.6rem"}}>{toothpaste()}</Card.Body>
+            </Card>
+            <Card ref={interdentalRef}  style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
+              <Card.Title style={{fontSize : "2rem"}}> <img src="/icons/interdental.png" style={{height : "10vh", width : "auto"}}></img> </Card.Title>
+              <Card.Body style={{fontSize : "1.6rem"}}>{interdental()}</Card.Body>
             </Card>
             <Card ref={techniqueRef}  style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
               <Card.Title style={{fontSize : "2rem"}}> <img src="/icons/brushing.png" style={{height : "10vh", width : "auto"}}></img> </Card.Title>
