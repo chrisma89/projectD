@@ -73,7 +73,7 @@ const ToothInfo = ({ childAge, ageUnit }) => {
   <Navbar expand="lg" style={{
       backgroundColor: "#FFBA08",
       color: "#FFBA08"}}>
-        <Navbar.Brand href="#home" style={{fontSize : "2rem", paddingLeft : "10px"}}>Dental Info</Navbar.Brand>
+        <Navbar.Brand href="#home" style={{fontSize : "2rem", paddingLeft : "10px"}}>DentalApp</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="container-fluid d-flex justify-content-end align-content-end">
