@@ -43,12 +43,13 @@
     "food" : [ "Avoid adding sugar to foods and drinks.",
     "Minimize consumption of sugary items.",
      "Especially avoid sugars before bedtime as saliva flow is reduced at night."
-   ]
+   ],
+   "advice" : "If using a dummy/pacifier, stop giving it between 6 months to 1 year of age."
 },
 {
   "id" : "3",
   "agegroup" : "3-6years",
-  "toothbrush" : ["Parental supervision and help with brushing is necessary to help get all teeth clean.", "Manual Brush : Use a medium bristle texture brush with a small head.", "Electric toothbrush is recommended"],
+  "toothbrush" : ["Parental supervision and help with brushing is necessary to help get all teeth clean.", "Manual Brush : Use a medium bristle texture brush with a small head.", "Electric toothbrush is recommended", "Replace toothbrush/ brush heads every 3 months."],
   "interdental" : ["Not recommended"],
   "toothpaste" : "Toothpaste containing 1,350 to 1,500 ppm fluoride. Amount : A pea-sized amount of toothpaste",
   "brushingtechnique" : [
@@ -60,23 +61,25 @@
     "food" : [ "Avoid adding sugar to foods and drinks.",
     "Minimize consumption of sugary items.",
      "Especially avoid sugars before bedtime as saliva flow is reduced at night."
-   ]
+   ],
+   "advice" : "The baby teeth will start to fall off around 5 years of age."
 },
 {
   "id" : "4",
   "agegroup" : "7-18years",
-  "toothbrush" : ["Manual Brush : Use a medium bristle texture brush with a small head.", "Electric toothbrush is recommended"],
-  "interdental" : ["Clean daily between the teeth to below the gum line before toothbrushing.", "Where there is space for an interdental or single-tufted brush should be used.", "For small spaces between teeth, use dental floss or tape."],
-  "toothpaste" : ["Toothpaste containing 1,350 to 1,500 ppm fluoride.", "Spit out after brushing rather than rinsing with water to avoid diluting the fluoride concentration"],
+  "toothbrush" : ["Manual Brush : Use a medium bristle brush with a small head.", "Electric or Powered toothbrush is recommended.", "Replace toothbrush/ brush head every 3 months."],
+  "interdental" : ["Clean daily between the teeth to below the gum line before toothbrushing.", "Where there is space for an interdental or single-tufted brush, this should be used.", "For small spaces between teeth, use dental floss or tape.", "Interdental cleaning is to be done once daily."],
+  "toothpaste" : ["Toothpaste containing 1,350 to 1,500 ppm Fluoride.", "Spit out after brushing rather than rinsing with water to avoid diluting the Fluoride concentration."],
   "brushingtechnique" : [
-    "Place the bristles of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Clean all the surfaces of the teeth.",
+    "Place the bristles of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Clean all the surfaces of all the teeth.",
      "Brushing back and forth can hurt the gums and teeth."
     ],
-  "frequency" : "last thing before bedtime and on one other occasion",
-    "dentalvisit" : "Every 6 months unless specified differently by your dentist",
+  "frequency" : "Last thing before bedtime and on one other occasion.",
+    "dentalvisit" : "Every 6 months and follow your dentist's recommendation for further visits.",
     "food" : [ "Avoid adding sugar to foods and drinks.",
      "Minimize consumption of sugary items.",
       "Especially avoid sugars before bedtime as saliva flow is reduced at night."
-    ]
+    ],
+    "advice" : "As the new teeth erupt, keep an eye on alignment of teeth. Ask your dentist for advice on need for braces."
 }
 ]
