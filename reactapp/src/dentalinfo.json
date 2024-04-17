@@ -15,21 +15,23 @@
   "Place the bristles of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Clean all the surfaces of the teeth.",
    "Brushing back and forth can hurt the gums and teeth."
   ],
-  "toothbrush" : "If the first tooth has come through, use a small, soft toothbrush. Replace toothbrush every 3 months.",
-  "toothpaste" : "If no tooth has come through yet, no need for toothpaste. If teeth are present,use toothpaste containing atleast 1000ppm of Fluroide. Amount : A smear of toothpaste.",
+  "toothbrush" : ["If the first tooth has come through, use a small, soft toothbrush.", "Replace toothbrush every 3 months."],
+  "interdental" : "Not recommended",
+  "toothpaste" : ["If no tooth has come through yet, no need for toothpaste.", "If teeth are present,use toothpaste containing atleast 1000ppm of Fluroide. Amount : A smear of toothpaste."],
   "frequency" : "Last thing before bed and on one other occasion.",
     "dentalvisit" : "As soon as the first tooth erupts and follow your dentist's recommendation for further visits.",
     "food" : [ "Avoid adding sugar to foods and drinks.",
      "Minimize consumption of sugary items.",
-      "Especially avoid sugars before bedtime as saliva flow is reduces at night."
+      "Especially avoid sugars before bedtime as saliva flow is reduced at night."
     ],
-    "advice" : "First tooth is expected from around 6 months of age. If the tooth hasnt come through after first birthday, consult your dentist for advice"
+    "advice" : "First tooth is expected from around 6 months of age. If the tooth hasn't come through after the first birthday, consult your dentist for advice"
 },
 {
   "id" : "2",
   "agegroup" : "6months-3years",
-  "toothbrush" : "Use a small, soft toothbrush. Replace toothbrush every 3 months.",
-  "toothpaste" : "Toothpaste containing atleast 1000ppm of Fluroide, Amount : A smear of toothpaste.",
+  "toothbrush" : ["Use a small, soft toothbrush.", "Replace toothbrush every 3 months."],
+  "interdental" : "Not recommended",
+  "toothpaste" : ["Toothpaste containing atleast 1000ppm of Fluroide.", "Amount : A smear of toothpaste."],
   "brushingtechnique" : [
   "Place the bristles of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Clean all the surfaces of the teeth.",
    "Brushing back and forth can hurt the gums and teeth."
@@ -38,13 +40,14 @@
     "dentalvisit" : "As soon as the first tooth erupts and follow your dentist's recommendation for further visits",
     "food" : [ "Avoid adding sugar to foods and drinks.",
     "Minimize consumption of sugary items.",
-     "Especially avoid sugars before bedtime as saliva flow is reduces at night."
+     "Especially avoid sugars before bedtime as saliva flow is reduced at night."
    ]
 },
 {
   "id" : "3",
   "agegroup" : "3-6years",
-  "toothbrush" : "Parental supervision and help with brushing is necessary to help get all teeth clean. Manual Brush : Use a medium bristle texture brush with a small head. Electric toothbrush is recommended",
+  "toothbrush" : ["Parental supervision and help with brushing is necessary to help get all teeth clean.", "Manual Brush : Use a medium bristle texture brush with a small head.", "Electric toothbrush is recommended"],
+  "interdental" : "Not recommended",
   "toothpaste" : "Toothpaste containing 1,350 to 1,500 ppm fluoride. Amount : A pea-sized amount of toothpaste",
   "brushingtechnique" : [
     "Place the bristles of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Clean all the surfaces of the teeth.",
@@ -54,15 +57,15 @@
     "dentalvisit" : "Every 6 months unless specified differently by your dentist",
     "food" : [ "Avoid adding sugar to foods and drinks.",
     "Minimize consumption of sugary items.",
-     "Especially avoid sugars before bedtime as saliva flow is reduces at night."
+     "Especially avoid sugars before bedtime as saliva flow is reduced at night."
    ]
 },
 {
   "id" : "4",
   "agegroup" : "7-18years",
-  "toothbrush" : "Manual Brush : Use a medium bristle texture brush with a small head. Electric toothbrush is recommended",
-  "interdental" : "Clean daily between the teeth to below the gum line before toothbrushing. Where there is space for an interdental or single-tufted brush, this should be used. For small spaces between teeth, use dental floss or tape.",
-  "toothpaste" : "Toothpaste containing 1,350 to 1,500 ppm fluoride, spitting out after brushing rather than rinsing with water, to avoid diluting the fluoride concentration",
+  "toothbrush" : ["Manual Brush : Use a medium bristle texture brush with a small head.", "Electric toothbrush is recommended"],
+  "interdental" : ["Clean daily between the teeth to below the gum line before toothbrushing.", "Where there is space for an interdental or single-tufted brush should be used.", "For small spaces between teeth, use dental floss or tape."],
+  "toothpaste" : ["Toothpaste containing 1,350 to 1,500 ppm fluoride.", "Spit out after brushing rather than rinsing with water to avoid diluting the fluoride concentration"],
   "brushingtechnique" : [
     "Place the bristles of the toothbrush at an angle along a row of teeth and against the gum line. Brush gently in circular motions. Clean all the surfaces of the teeth.",
      "Brushing back and forth can hurt the gums and teeth."
@@ -71,7 +74,7 @@
     "dentalvisit" : "Every 6 months unless specified differently by your dentist",
     "food" : [ "Avoid adding sugar to foods and drinks.",
      "Minimize consumption of sugary items.",
-      "Especially avoid sugars before bedtime as saliva flow is reduces at night."
+      "Especially avoid sugars before bedtime as saliva flow is reduced at night."
     ]
 }
 ]

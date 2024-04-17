@@ -86,11 +86,11 @@ const ToothInfo = ({ childAge, ageUnit }) => {
         
 
       <Container className="d-flex justify-content-center align-items-center" style={{ fontSize: "1.6rem" , padding : "20px"}}>
-          Your child is {childAge} {ageUnit} old
+          Dental advice for your {childAge} {ageUnit} old child:
         </Container>
           <Container className = "d-flex flex-column" style={{ textAlign: "center" }}>
             {" "}
-            <Card ref={toothbrushRef} style={{margin : "20px", padding : "20px", backgroundColor : "#FFBA08" , color : "#032B43"}}>
+            <Card ref={toothbrushRef} style={{margin : "20px", padding : "20px",  backgroundColor: "rgba(255, 186, 8, 1)" , color : "#032B43"}}>
               <Card.Title style={{fontSize : "2rem"}}>
                 <img src="/icons/tooth-brush.png" style={{height : "10vh", width : "auto"}}></img>
               </Card.Title>
