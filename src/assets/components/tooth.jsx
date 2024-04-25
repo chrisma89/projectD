@@ -3,10 +3,7 @@ import CustomInfo from "./custominfo";
 import React from "react";
 import { useRef } from 'react';
 import { useState, useEffect } from "react";
-import Card from "react-bootstrap/Card";
-import Container from "react-bootstrap/Container"
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import { Card, Container, Navbar, Nav, Collapse } from 'react-bootstrap';
 import FirstTooth from "./firsttooth";
 
 
@@ -14,6 +11,10 @@ import FirstTooth from "./firsttooth";
 const ToothInfo = ({ childAge, ageUnit }) => {
   let ageData = `${childAge} ${ageUnit}`;
   let agedata = localStorage.getItem("agedata");
+
+  const [open, setOpen] = useState(false);
+
+  const toggleCollapse = () => setOpen(!open);
   // console.log(agedata);
   const toothbrushRef = useRef(null);
   const toothpasteRef = useRef(null);
@@ -77,16 +78,17 @@ const ToothInfo = ({ childAge, ageUnit }) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="container-fluid d-flex justify-content-end align-content-end">
-            <Nav.Link onClick={() => scrollToRef(toothbrushRef)}> <img src="/icons/tooth-brush.png" style={{height : "8vh", width : "auto", margin : "4px"}}/></Nav.Link>
-            <Nav.Link onClick={() => scrollToRef(toothpasteRef)}><img src="/icons/toothpaste.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
-            <Nav.Link onClick={() => scrollToRef(interdentalRef)}><img src="/icons/interdental.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
-            <Nav.Link onClick={() => scrollToRef(techniqueRef)}><img src="/icons/brushing.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
-            <Nav.Link onClick={() => scrollToRef(frequencyRef)}> <img src="/icons/brushingfrquency.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
             
-            <Nav.Link onClick={() => scrollToRef(scheduleRef)}><img src="/icons/calendar.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
-            <Nav.Link onClick={() => scrollToRef(foodRef)}><img src="/icons/food.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
-            <Nav.Link onClick={() => scrollToRef(adviceRef)}><img src="/icons/advice.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
-            {/* Add more Nav.Link elements for each card */}
+            <Nav.Link onClick={() =>{toggleCollapse(); scrollToRef(toothbrushRef)}}> <img src="/icons/tooth-brush.png" style={{height : "8vh", width : "auto", margin : "4px"}}/></Nav.Link>
+            <Nav.Link onClick={() =>{toggleCollapse(); scrollToRef(toothpasteRef)}}><img src="/icons/toothpaste.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
+            <Nav.Link onClick={() => {toggleCollapse(); scrollToRef(interdentalRef)}}><img src="/icons/interdental.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
+            <Nav.Link onClick={() =>{toggleCollapse(); scrollToRef(techniqueRef)}}><img src="/icons/brushing.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
+            <Nav.Link onClick={() => {toggleCollapse(); scrollToRef(frequencyRef)}}> <img src="/icons/brushingfrquency.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
+            
+            <Nav.Link onClick={() =>{toggleCollapse(); scrollToRef(scheduleRef)}}><img src="/icons/calendar.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
+            <Nav.Link onClick={() =>{toggleCollapse(); scrollToRef(foodRef)}}><img src="/icons/food.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
+            <Nav.Link  onClick={() =>{toggleCollapse(); scrollToRef(adviceRef)}}><img src="/icons/advice.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
+            
           </Nav>
         </Navbar.Collapse>
       </Navbar>
