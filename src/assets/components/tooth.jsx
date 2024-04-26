@@ -14,7 +14,7 @@ const ToothInfo = ({ childAge, ageUnit }) => {
 
   const [open, setOpen] = useState(false);
 
-  const toggleCollapse = () => setOpen(!open);
+  const toggleCollapse = () => setOpen(false);
   // console.log(agedata);
   const toothbrushRef = useRef(null);
   const toothpasteRef = useRef(null);

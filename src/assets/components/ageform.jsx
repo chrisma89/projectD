@@ -5,7 +5,6 @@ import CustomInfo from "./custominfo";
 import FirstTooth from "./firsttooth";
 
 const Age = () => {
-
   // Initialise date to null and then set to date chosen by the user
   // Initialised info page toggle based on user click
   const [date, setDate] = useState(null);
@@ -22,18 +21,15 @@ const Age = () => {
 
   // info page toggle done on clicking the button
   const displayinfo = () => {
-    if(dats){
+    if (dats) {
       setInfo(true);
+    } else {
+      alert("Please enter valid date");
     }
-    else {
-      alert("Please enter valid date")
-    }
-    
   };
 
   // conditional to check if info is truthy
   if (info) {
-
     return <CustomInfo />;
   }
 
@@ -49,20 +45,27 @@ const Age = () => {
     }
   };
 
-
-  
-
-
   return (
-    <div className="container-fluid d-flex flex-column align-items-center justify-content-center" style={{backgroundColor : "#032B43", height : "100vh", padding : "40px", color : "#FFBA08"}}>
-      <div className="container-fluid d-flex flex-column justify-content-center align-items-center" style={{padding : "50px"}}>
+    <div
+      className="container-fluid d-flex flex-column align-items-center justify-content-center"
+      style={{
+        backgroundColor: "#032B43",
+        height: "100vh",
+        padding: "40px",
+        color: "#FFBA08",
+      }}
+    >
+      <div
+        className="container-fluid d-flex flex-column justify-content-center align-items-center"
+        style={{ padding: "50px" }}
+      >
         <h2>Welcome to Dental App</h2>
-      <h5>Tiny Teeth, Big Smiles: Nurturing Your Child's Dental Health</h5>
+        <h5>Tiny Teeth, Big Smiles: Nurturing Your Child's Dental Health</h5>
       </div>
-      
+
       <h4>Enter child's Date of Birth</h4>
-      <div className= "conatiner-fluid d-flex" style= {{padding : "20px"}}>
-        <DatePicker 
+      <div className="conatiner-fluid d-flex" style={{ padding: "20px" }}>
+        <DatePicker
           placeholderText="Click to select a date"
           dateFormat="dd/MM/yyyy"
           showMonthDropdown
@@ -72,23 +75,27 @@ const Age = () => {
           selected={date}
           maxDate={new Date()}
           onChange={(date) => {
-            setDate(date)
-           
+            setDate(date);
           }}
         />
       </div>
       {/* <div>
       Your child's age is : 
     </div> */}
-    {/* <FirstTooth /> */}
+      {/* <FirstTooth /> */}
       <div>
-        <button style={{backgroundColor : "#FFBA08", color : "#032B4", padding : "10px"}}
+        <button
+          style={{
+            backgroundColor: "#FFBA08",
+            color: "#032B4",
+            padding: "10px",
+          }}
           onClick={() => {
             {
               displayinfo;
-              setInfo(true)
-            
-            storeDate(date);
+              setInfo(true);
+
+              storeDate(date);
             }
           }}
         >
