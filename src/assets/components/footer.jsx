@@ -7,7 +7,7 @@ const Footer = () => {
       className="container-fluid d-flex footer justify-content-center"
       style={{ width: "100%", height: "6%", alignItems: "center" }}
     >
-      <div style={{padding : "8px"}}>©DentalApp 2024</div>
+      <div style={{padding : "8px"}}>©FIRSTTOOTH 2024</div>
       <div>
         <a
           style={{ color: "#23001E" }}

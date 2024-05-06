@@ -59,8 +59,8 @@ const Age = () => {
         className="container-fluid d-flex flex-column justify-content-center align-items-center"
         style={{ padding: "50px" }}
       >
-        <h2>Welcome to Dental App</h2>
-        <h5>Tiny Teeth, Big Smiles: Nurturing Your Child's Dental Health</h5>
+        <h2>FIRST TOOTH</h2>
+        <h5>Nurturing Your Child's Dental Health</h5>
       </div>
 
       <h4>Enter child's Date of Birth</h4>
