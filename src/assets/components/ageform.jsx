@@ -21,7 +21,7 @@ const Age = () => {
 
   // info page toggle done on clicking the button
   const displayinfo = () => {
-    if (dats) {
+    if (date) {
       setInfo(true);
     } else {
       alert("Please enter valid date");
@@ -32,6 +32,7 @@ const Age = () => {
   if (info) {
     return <CustomInfo />;
   }
+  
 
   // retrieving stored birthdate from local storage
   const storeDate = () => {
@@ -39,6 +40,7 @@ const Age = () => {
 
     if (!retrievedDate) {
       console.log("Date is invalid");
+      // alert("Enter a valid date of birth")
       return;
     } else {
       console.log(retrievedDate);
@@ -92,7 +94,7 @@ const Age = () => {
           }}
           onClick={() => {
             {
-              displayinfo;
+              displayinfo();
               setInfo(true);
 
               storeDate(date);
