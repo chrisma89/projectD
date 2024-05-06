@@ -13,3 +13,6 @@
 <a href="https://www.flaticon.com/free-icons/dentist" title="dentist icons">Dentist icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/dental-advice" title="dental advice icons">Dental advice icons created by piksart - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/dentist" title="dentist icons">Dentist icons created by Freepik - Flaticon</a>
+Favicon:
+
+<a href="https://www.flaticon.com/free-icons/teeth" title="teeth icons">Teeth icons created by Freepik - Flaticon</a>
