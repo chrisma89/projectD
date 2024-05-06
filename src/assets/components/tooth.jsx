@@ -106,7 +106,7 @@ const ToothInfo = ({ childAge, ageUnit }) => {
         {/* </div> */}
         
 
-      <Container className="d-flex justify-content-center align-items-center" style={{ fontSize: "1.6rem" , padding : "20px"}}>
+      <Container className="d-flex justify-content-center align-items-center" style={{ fontSize: "2rem" , padding : "20px", margin : "20px"}}>
           Dental advice for your {childAge} {ageUnit} old
         </Container>
           <Container className = "d-flex flex-column" style={{ textAlign: "center" }}>
