@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import { useState, useEffect } from "react";
 import { Card, Container, Navbar, Nav, Collapse } from 'react-bootstrap';
 import FirstTooth from "./firsttooth";
+import ageform from "./ageform"
 
 
 
@@ -26,7 +27,8 @@ const ToothInfo = ({ childAge, ageUnit }) => {
   const interdentalRef = useRef(null);
   
 
- 
+  // Funtion to navigate to homepage
+  const [showAgeform , setAgeform] = useState(false)
 
   // Function to scroll to ref
   const scrollToRef = (ref) => ref.current.scrollIntoView({ behavior: 'smooth' });
@@ -74,11 +76,11 @@ const ToothInfo = ({ childAge, ageUnit }) => {
   <Navbar expand="lg" style={{
       backgroundColor: "#FFBA08",
       color: "#FFBA08"}}>
-        <Navbar.Brand href="#home" style={{fontSize : "2rem", paddingLeft : "10px"}}>FIRSTTOOTH</Navbar.Brand>
+        {/* <Navbar.Brand onClick={() => setAgeform(!showAgeform)} style={{fontSize : "2rem", paddingLeft : "10px"}}>FIRSTTOOTH</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="container-fluid d-flex justify-content-end align-content-end">
-            
+          <Nav.Link onClick={() => setAgeform(!showAgeform)} style={{fontSize : "2rem", paddingLeft : "10px"}}>FIRSTTOOTH</Nav.Link>
             <Nav.Link onClick={() =>{toggleCollapse(); scrollToRef(toothbrushRef)}}> <img src="/icons/tooth-brush.png" style={{height : "8vh", width : "auto", margin : "4px"}}/></Nav.Link>
             <Nav.Link onClick={() =>{toggleCollapse(); scrollToRef(toothpasteRef)}}><img src="/icons/toothpaste.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
             <Nav.Link onClick={() => {toggleCollapse(); scrollToRef(interdentalRef)}}><img src="/icons/interdental.png" style={{height : "8vh", width : "auto",  margin : "4px"}}></img></Nav.Link>
